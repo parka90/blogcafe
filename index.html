@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlogDeCafé</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+   
 </head>
+
+<!--preload-->
+<link rel="preload" href="css/normalize.css" as="style">
+<link rel="stylesheet" href="css/normalize.css">
+
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" crossorigin="crossorigin" as="font">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:wght@400;700&display=swap">
+
+<link rel="preload" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preload" href="img/blog1.jpg" as="image">
+
 <body>
    
     <header class="header ">
@@ -37,7 +48,7 @@
 
             <article class="entrada">
                 <div class="entrada_imagen">
-                    <img src="img/blog1.jpg" alt="imagen blog">
+                    <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
                 </div>
                 <div class="entrada_contenido">
                     <h4 class="no-margin">Tipos de grano de café</h4>
@@ -47,7 +58,7 @@
             </article>
             <article class="entrada">
                 <div class="entrada_imagen">
-                    <img src="img/blog2.jpg" alt="imagen blog">
+                    <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
                 </div>
                 <div class="entrada_contenido">
                     <h4 class="no-margin">Tres deliciosas recetas de café</h4>
@@ -57,7 +68,7 @@
             </article>
             <article class="entrada">
                 <div class="entrada_imagen">
-                    <img src="img/blog3.jpg" alt="imagen blog">
+                    <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
                 </div>
                 <div class="entrada_contenido">
                     <h4 class="no-margin">Beneficios del café</h4>
